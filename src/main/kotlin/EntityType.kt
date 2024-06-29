@@ -40,7 +40,7 @@ enum class EntityType(name: String) : Minecraftable {
     MinecartwithTNT("tnt_minecart"),
     Painting("painting"),
     PrimedTNT("tnt"),
-    Textdisplay("text_display"),
+    TextDisplay("text_display"),
     ShulkerBullet("shulker_bullet"),
     Snowball("snowball"),
     Trident("trident"),
