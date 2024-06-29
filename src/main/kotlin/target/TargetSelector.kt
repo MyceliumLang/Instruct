@@ -1,6 +1,8 @@
 package com.mycelium.target
 
-class TargetSelector {
+import com.mycelium.Minecraftable
+
+class TargetSelector : Minecraftable {
     private var selector: Selector? = null
     private var player: String? = null
     private var individual: Boolean = false
@@ -17,10 +19,10 @@ class TargetSelector {
         individual = true
     }
 
-    fun toScoreHolder(): String {
+    override fun toMinecraft(): String {
         if(individual) return "*"
         if(player != null) return player!!
         if(selector != null) return selector!!.toMinecraft()
-        return "*"
+        return Selector(Selector.Type.AllPlayers).toMinecraft()
     }
 }

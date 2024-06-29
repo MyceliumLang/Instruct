@@ -42,7 +42,7 @@ class JsonScoreComponent(private val target: TargetSelector?,
 
         return buildJsonObject {
             put("score", buildJsonObject {
-                put("name", target.toScoreHolder())
+                put("name", target.toMinecraft())
                 put("objective", scoreboard)
             })
             for(pair in getFormatting()) {
