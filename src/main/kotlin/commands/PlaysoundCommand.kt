@@ -21,40 +21,8 @@ enum class SoundSource(private val mcName: String) : Minecraftable {
     }
 }
 
-class PlaysoundCommand(private val sound: String) : BaseCommand("playsound") {
-    private var source: SoundSource? = null;
-    private var target: TargetSelector? = null;
-    private var pos: Vector3<Double>? = null;
-    private var volume: Float? = null;
-    private var pitch: Float? = null;
-    private var minVolume: Float? = null;
-
-    fun source(source: SoundSource): PlaysoundCommand {
-        this.source = source
-        return this
-    }
-
-    fun target(target: TargetSelector): PlaysoundCommand {
-        this.target = target
-        return this
-    }
-
-    fun pos(pos: Vector3<Double>): PlaysoundCommand {
-        this.pos = pos
-        return this
-    }
-    fun volume(volume: Float): PlaysoundCommand {
-        this.volume = volume
-        return this
-    }
-    fun pitch(pitch: Float): PlaysoundCommand {
-        this.pitch = pitch
-        return this
-    }
-    fun minVolume(minVolume: Float): PlaysoundCommand {
-        this.minVolume = minVolume
-        return this
-    }
+class PlaysoundCommand(private val sound: String, private val source: SoundSource? = null, private val target: TargetSelector? = null, private val pos: Vector3<Double>? = null,
+                       private val volume: Float? = null, private val pitch: Float? = null, private val minVolume: Float? = null) : BaseCommand("playsound") {
 
     override fun toMinecraft(): String {
         addArgument(sound)
