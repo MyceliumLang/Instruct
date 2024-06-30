@@ -21,7 +21,7 @@ enum class SoundSource(private val mcName: String) : Minecraftable {
     }
 }
 
-class PlaysoundCommand(sound: String) : BaseCommand("playsound") {
+class PlaysoundCommand(private val sound: String) : BaseCommand("playsound") {
     private var source: SoundSource? = null;
     private var target: TargetSelector? = null;
     private var pos: Vector3<Double>? = null;
@@ -57,6 +57,7 @@ class PlaysoundCommand(sound: String) : BaseCommand("playsound") {
     }
 
     override fun toMinecraft(): String {
+        addArgument(sound)
         source?.toMinecraft()?.let{ addArgument(it) }
         target?.toMinecraft()?.let{ addArgument(it) }
         pos?.toMinecraft()?.let{ addArgument(it) }
