@@ -1,4 +1,9 @@
 package com.mycelium.arguments
 
-class Advancement {
+import com.mycelium.Minecraftable
+
+class Advancement : Minecraftable {
+    override fun toMinecraft(): String {
+        return ""
+    }
 }

@@ -1,12 +1,14 @@
-package com.mycelium
+package com.mycelium.arguments
 
-enum class Gamemode(name: String) : Minecraftable {
+import com.mycelium.Minecraftable
+
+enum class Gamemode(private val mcName: String) : Minecraftable {
     Spectator("spectator"),
     Survival("spectator"),
     Creative("spectator"),
     Adventure("spectator");
 
     override fun toMinecraft(): String {
-        return name
+        return mcName
     }
 }

@@ -2,7 +2,7 @@ package com.mycelium.target
 
 import com.mycelium.Minecraftable
 
-class TargetSelector : Minecraftable {
+open class TargetSelector : Minecraftable {
     private var selector: Selector? = null
     private var player: String? = null
     private var individual: Boolean = false
