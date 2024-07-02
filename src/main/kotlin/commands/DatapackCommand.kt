@@ -29,7 +29,7 @@ enum class DatapackType(private val mcName: String) : Minecraftable {
     }
 }
 
-class DatapackCommand() : BaseCommand("datapack") {
+class DatapackCommand : BaseCommand("datapack") {
     fun disable(name: String): CommandEnd {
         return CommandEnd(this, "disable", name)
     }
@@ -48,9 +48,5 @@ class DatapackCommand() : BaseCommand("datapack") {
 
     fun list(type: DatapackType): CommandEnd {
         return CommandEnd(this, "list", type.toMinecraft())
-    }
-
-    override fun toMinecraft(): String {
-        return super.toMinecraft()
     }
 }

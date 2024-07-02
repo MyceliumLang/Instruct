@@ -1,6 +1,6 @@
 package com.mycelium.commands
 
-class TickCommand() : BaseCommand("tick") {
+class TickCommand : BaseCommand("tick") {
     fun query(): CommandEnd {
         return CommandEnd(this, "query")
     }
@@ -35,9 +35,5 @@ class TickCommand() : BaseCommand("tick") {
 
     fun sprintStop(): CommandEnd {
         return CommandEnd(this, "sprint", "stop")
-    }
-
-    override fun toMinecraft(): String {
-        return super.toMinecraft()
     }
 }

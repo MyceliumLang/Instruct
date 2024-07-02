@@ -1,5 +1,6 @@
 package com.mycelium.commands
 
+import com.mycelium.Minecraftable
 import com.mycelium.arguments.vec.Vector3
 import com.mycelium.nbt.NBT
 import com.mycelium.target.TargetSelector
@@ -10,12 +11,26 @@ interface DataTarget<out T> {
     fun storage(source: String): T
 }
 
-interface DataModification<out T> {
-    fun append(): T
-    fun insert(index: Int): T
-    fun merge(): T
-    fun prepend(): T
-    fun set(): T
+class DataModification<out T>(private val cmd: T) {
+    fun append(): T {
+        return cmd
+    }
+
+    fun insert(index: Int): T {
+        return cmd
+    }
+
+    fun merge(): T {
+        return cmd
+    }
+
+    fun prepend(): T {
+        return cmd
+    }
+
+    fun set(): T {
+        return cmd
+    }
 }
 
 interface DataSource<out T> {
@@ -65,7 +80,26 @@ class DataMerge(parent: DataSubcommand<DataMerge>) : SubCommand(parent) {
 }
 
 class DataModify(parent: DataSubcommand<DataModify>) : SubCommand(parent) {
-    
+//    operator fun invoke(path: String): DataModification<> {
+//
+//    }
+}
+
+class DataModifyModification {
+    fun append() {
+    }
+
+    fun insert(index: Int) {
+    }
+
+    fun merge() {
+    }
+
+    fun prepend() {
+    }
+
+    fun set() {
+    }
 }
 
 class DataRemove(parent: DataSubcommand<DataRemove>) : SubCommand(parent) {
