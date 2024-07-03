@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 enum class SortTypes(private val mcName: String) : Minecraftable {
     Nearest("nearest"),

@@ -1,7 +1,7 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.arguments.vec.Vector3
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.arguments.vec.Vector3
+import io.github.myceliumlang.target.TargetSelector
 
 class TeleportCommand {
     constructor(destination: TargetSelector) {}

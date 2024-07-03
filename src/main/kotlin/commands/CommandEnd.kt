@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class CommandEnd(private val command: Commandable, vararg val arguments: String) : Minecraftable {
     override fun toMinecraft(): String {

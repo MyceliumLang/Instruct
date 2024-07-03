@@ -1,11 +1,11 @@
-package com.mycelium.target
+package io.github.myceliumlang.target
 
-import com.mycelium.Minecraftable
-import com.mycelium.arguments.EntityType
-import com.mycelium.arguments.Gamemode
-import com.mycelium.arguments.*
-import com.mycelium.arguments.List
-import com.mycelium.nbt.NBT
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.arguments.EntityType
+import io.github.myceliumlang.arguments.Gamemode
+import io.github.myceliumlang.arguments.*
+import io.github.myceliumlang.arguments.List
+import io.github.myceliumlang.nbt.NBT
 
 class Selector(private val selectorType: Type) : Minecraftable {
     enum class Type(val char: Char) {

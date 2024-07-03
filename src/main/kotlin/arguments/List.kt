@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class List<T : Minecraftable> : Minecraftable {
     private val scores: MutableList<T> = mutableListOf()

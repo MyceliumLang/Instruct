@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 open class BaseCommand(baseCommandName: String) : Commandable {
     override val name: String = baseCommandName

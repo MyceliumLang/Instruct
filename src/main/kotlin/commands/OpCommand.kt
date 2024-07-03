@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class OpCommand(private val target: TargetSelector) : BaseCommand("op") {
     override fun toMinecraft(): String {

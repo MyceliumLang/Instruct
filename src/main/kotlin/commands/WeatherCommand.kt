@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.arguments.WeatherType
+import io.github.myceliumlang.arguments.WeatherType
 
 class WeatherCommand(private val type: WeatherType, private val duration: Float? = null) : BaseCommand("weather") {
     override fun toMinecraft(): String {

@@ -1,6 +1,6 @@
-package com.mycelium.tags
+package io.github.myceliumlang.tags
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class Tag(private val location: String) : Minecraftable {
     override fun toMinecraft(): String {

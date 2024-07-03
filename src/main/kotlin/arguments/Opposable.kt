@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class Opposable<T>(val name: T) : Minecraftable {
     private var oppose: Boolean = false

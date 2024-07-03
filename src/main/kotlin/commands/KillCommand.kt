@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class KillCommand(private val entity: TargetSelector) : BaseCommand("kill") {
     override fun toMinecraft(): String {

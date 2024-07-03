@@ -1,4 +1,4 @@
-package com.mycelium.components.text
+package io.github.myceliumlang.components.text
 
 import kotlinx.serialization.json.JsonElement
 import kotlinx.serialization.json.buildJsonArray

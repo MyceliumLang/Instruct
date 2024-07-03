@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.arguments.Gamemode
+import io.github.myceliumlang.arguments.Gamemode
 
 class DefaultGamemodeCommand(private val gamemode: Gamemode) : BaseCommand("defaultgamemode") {
     override fun toMinecraft(): String {

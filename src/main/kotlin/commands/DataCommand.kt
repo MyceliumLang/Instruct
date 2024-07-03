@@ -1,9 +1,9 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.Minecraftable
-import com.mycelium.arguments.vec.Vector3
-import com.mycelium.nbt.NBT
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.arguments.vec.Vector3
+import io.github.myceliumlang.nbt.NBT
+import io.github.myceliumlang.target.TargetSelector
 
 interface DataTarget<out T> {
     fun block(targetPosition: Vector3<Int>): T

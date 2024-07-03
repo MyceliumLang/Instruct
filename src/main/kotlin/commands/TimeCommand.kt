@@ -1,7 +1,7 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.Minecraftable
-import com.mycelium.arguments.Time
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.arguments.Time
 
 enum class TimeQuery(private val mcName: String) : Minecraftable {
     Daytime("daytime"),

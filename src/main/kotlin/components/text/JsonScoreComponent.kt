@@ -1,6 +1,6 @@
-package com.mycelium.components.text
+package io.github.myceliumlang.components.text
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 import kotlinx.serialization.json.*
 
 class JsonScoreComponent(private val target: TargetSelector?,

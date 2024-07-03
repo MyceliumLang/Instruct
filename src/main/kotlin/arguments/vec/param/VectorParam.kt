@@ -1,6 +1,6 @@
-package com.mycelium.arguments.vec.param
+package io.github.myceliumlang.arguments.vec.param
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 open class VectorParam<T>(val x: T) : Minecraftable {
     override fun toMinecraft(): String {

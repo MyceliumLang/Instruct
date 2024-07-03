@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class Score(private val objective: String, private val value: Range<Int>) : Minecraftable {
     override fun toMinecraft(): String {

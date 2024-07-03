@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.arguments.vec.Vector2
+import io.github.myceliumlang.arguments.vec.Vector2
 
 class ForceloadCommand : BaseCommand("forceload") {
     fun add(from: Vector2<Int>, to: Vector2<Int>? = null) : CommandEnd {

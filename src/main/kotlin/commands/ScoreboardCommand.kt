@@ -1,9 +1,9 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.InstructJson
-import com.mycelium.Minecraftable
-import com.mycelium.components.text.JsonTextComponent
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.InstructJson
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.components.text.JsonTextComponent
+import io.github.myceliumlang.target.TargetSelector
 import kotlinx.serialization.encodeToString
 
 enum class RenderType(private val mcName: String) : Minecraftable {
@@ -82,6 +82,18 @@ class ScoreboardPlayers(parent: ScoreboardCommand) : SubCommand(parent, "players
 
     fun operation(target: TargetSelector, objective: String, operation: ScoreboardOperation, source: TargetSelector, sourceObjective: String): CommandEnd {
         return CommandEnd(this, "operation", target.toMinecraft(), objective, operation.toMinecraft(), source.toMinecraft(), sourceObjective)
+    }
+}
+
+enum class ScoreboardCompareOperation(private val mcName: String) : Minecraftable {
+    Less("<"),
+    LessEqual("<="),
+    Equal("="),
+    Greater(">"),
+    GreaterEqual(">=");
+
+    override fun toMinecraft(): String {
+        return mcName
     }
 }
 

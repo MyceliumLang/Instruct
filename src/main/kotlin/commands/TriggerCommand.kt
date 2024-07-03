@@ -1,4 +1,4 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
 class TriggerCommand(private val objective: String) : BaseCommand("trigger") {
     fun add(value: Int): CommandEnd {

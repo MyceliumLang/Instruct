@@ -1,7 +1,7 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.arguments.vec.Vector3
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.arguments.vec.Vector3
+import io.github.myceliumlang.target.TargetSelector
 
 class SpawnpointCommand(private var target: TargetSelector? = null, private var pos: Vector3<Int>? = null, private var angle: Vector3<Float>? = null) : BaseCommand("spawnpoint") {
     override fun toMinecraft(): String {

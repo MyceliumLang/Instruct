@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class PardonIpCommand(private val targets: TargetSelector) : BaseCommand("pardon-ip") {
     override fun toMinecraft(): String {

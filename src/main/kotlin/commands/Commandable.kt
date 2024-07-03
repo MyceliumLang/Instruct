@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 interface Commandable : Minecraftable {
     val name: String?

@@ -1,8 +1,8 @@
-package com.mycelium.target
+package io.github.myceliumlang.target
 
-import com.mycelium.Minecraftable
-import com.mycelium.arguments.List
-import com.mycelium.arguments.Opposable
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.arguments.List
+import io.github.myceliumlang.arguments.Opposable
 
 class SelectorArgument<T>(owner: Selector, private val argument: String) : Minecraftable {
     var value: T? = null

@@ -1,6 +1,6 @@
-package com.mycelium.target
+package io.github.myceliumlang.target
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 open class TargetSelector : Minecraftable {
     private var selector: Selector? = null

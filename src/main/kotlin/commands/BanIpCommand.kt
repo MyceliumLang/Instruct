@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class BanIpCommand(private val target: TargetSelector, private val reason: String?=null) : BaseCommand("ban-ip") {
     override fun toMinecraft(): String {

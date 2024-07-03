@@ -1,6 +1,6 @@
-package com.mycelium.nbt
+package io.github.myceliumlang.nbt
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class NBT : Minecraftable {
     override fun toMinecraft(): String {

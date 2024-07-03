@@ -1,4 +1,4 @@
-package com.mycelium
+package io.github.myceliumlang
 
 import kotlinx.serialization.json.Json
 

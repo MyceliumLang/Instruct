@@ -1,8 +1,8 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.Minecraftable
-import com.mycelium.arguments.vec.Vector3
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.arguments.vec.Vector3
+import io.github.myceliumlang.target.TargetSelector
 
 enum class SoundSource(private val mcName: String) : Minecraftable {
     Master("master"),

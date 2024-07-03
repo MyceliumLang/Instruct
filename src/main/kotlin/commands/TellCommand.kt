@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class TellCommand(private val target: TargetSelector, private val message: String) : BaseCommand("tell") {
     override fun toMinecraft(): String {

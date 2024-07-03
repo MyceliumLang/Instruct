@@ -1,8 +1,8 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.InstructJson
-import com.mycelium.components.text.JsonComponent
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.InstructJson
+import io.github.myceliumlang.components.text.JsonComponent
+import io.github.myceliumlang.target.TargetSelector
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.buildJsonArray
 

@@ -1,4 +1,4 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
 class ListCommand(private val listUUIDS: Boolean = false) : BaseCommand("list") {
     override fun toMinecraft(): String {

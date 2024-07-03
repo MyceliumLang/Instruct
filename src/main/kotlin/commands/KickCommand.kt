@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class KickCommand(private val targets: TargetSelector, private val reason: String?=null) : BaseCommand("kick") {
     override fun toMinecraft(): String {

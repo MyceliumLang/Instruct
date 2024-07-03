@@ -1,9 +1,9 @@
-package com.mycelium.arguments.vec
+package io.github.myceliumlang.arguments.vec
 
-import com.mycelium.Minecraftable
-import com.mycelium.arguments.vec.param.ParamLocal
-import com.mycelium.arguments.vec.param.ParamRelative
-import com.mycelium.arguments.vec.param.VectorParam
+import io.github.myceliumlang.Minecraftable
+import io.github.myceliumlang.arguments.vec.param.ParamLocal
+import io.github.myceliumlang.arguments.vec.param.ParamRelative
+import io.github.myceliumlang.arguments.vec.param.VectorParam
 
 class Vector2<T>(private val x: VectorParam<T>, private val y: VectorParam<T>) : Minecraftable {
     companion object {

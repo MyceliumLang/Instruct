@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.arguments.Gamemode
+import io.github.myceliumlang.arguments.Gamemode
 
 class PublishCommand(private val allowCommands: Boolean? = null, private val gamemode: Gamemode? = null,
                      private val port: Int? = null /* docs say this should be an Int, but ports are technically UShorts */) : BaseCommand("publish") {

@@ -1,6 +1,6 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
 class WhitelistCommand : BaseCommand("whitelist") {
     fun add(target: TargetSelector): CommandEnd {

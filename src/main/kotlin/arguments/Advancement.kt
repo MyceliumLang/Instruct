@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class Advancement : Minecraftable {
     override fun toMinecraft(): String {

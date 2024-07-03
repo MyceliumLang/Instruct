@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 enum class Gamerule(private val mcName: String, public val type: Class<*>) : Minecraftable {
     AnnounceAdvancements("announceAdvancements", Boolean::class.java),

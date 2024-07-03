@@ -1,6 +1,6 @@
-package com.mycelium.arguments
+package io.github.myceliumlang.arguments
 
-import com.mycelium.Minecraftable
+import io.github.myceliumlang.Minecraftable
 
 class Range<T>(private val min: T?=null, private val max: T?=null) : Minecraftable {
     companion object {

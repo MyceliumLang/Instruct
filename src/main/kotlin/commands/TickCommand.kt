@@ -1,4 +1,4 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
 class TickCommand : BaseCommand("tick") {
     fun query(): CommandEnd {

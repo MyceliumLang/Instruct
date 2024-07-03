@@ -1,9 +1,10 @@
-package com.mycelium
+package io.github.myceliumlang
 
-import com.mycelium.arguments.EntityType
-import com.mycelium.arguments.Range
-import com.mycelium.commands.DataCommand
-import com.mycelium.target.Selector
+import io.github.myceliumlang.arguments.EntityType
+import io.github.myceliumlang.arguments.Range
+import io.github.myceliumlang.commands.*
+import io.github.myceliumlang.target.Selector
+import io.github.myceliumlang.target.TargetSelector
 
 fun main() {
     val allCreepersWithinABlock = Selector.AllEntities.new()
@@ -11,9 +12,7 @@ fun main() {
     allCreepersWithinABlock.type += EntityType.Creeper
     allCreepersWithinABlock.limit += 10
 
-//    println(KillCommand(allCreepersWithinABlock.target()).toMinecraft())
-//    println(ScoreboardCommand().objectives.add("registers", Criteria.Dummy).toMinecraft())
-//    println(ScoreboardCommand().objectives.modify("registers").displayName(JsonTextComponent.Builder().text("Registers").build()).toMinecraft())
-
-    println(DataCommand().get.storage("example:__globals__0")("variables.b", 0.1).toMinecraft())
+    println(ExecuteCommand()._if.score(TargetSelector("#reg1"), "registers", ScoreboardCompareOperation.Equal, TargetSelector("#reg2"), "registers").run(
+        ReturnCommand().run(FunctionCommand("example:if0"))
+    ).toMinecraft())
 }
