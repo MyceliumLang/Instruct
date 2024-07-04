@@ -1,8 +1,8 @@
-package com.mycelium.commands
+package io.github.myceliumlang.commands
 
-import com.mycelium.target.TargetSelector
+import io.github.myceliumlang.target.TargetSelector
 
-class DeopCommand(private val target: TargetSelector): BaseCommand("deop") {
+class DeopCommand(private val target: TargetSelector) : BaseCommand("deop") {
     override fun toMinecraft(): String {
         addArgument(target.toMinecraft())
 
